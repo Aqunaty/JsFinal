@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap">
+    <title>HiLo Game</title>
+</head>
+<body id="body">  
+    <div class="screen start-window" id="GSS">
+        <div >
+            <h1>Welcome To The HiLo Game</h1>
+            <button class="btn btn-showRules" id="rules">Rules</button>
+        </div>
+<!--         
+        <button style="margin-bottom :100px;" class="btn btn-changedesk" id="desk">Change Desk</button> -->
+        <button class="btn btn-startgame" id="startstartGame">Start Game</button>
+    </div> 
+    <div class="screen game-window" id="GRS">
+        <div class="score">
+            <p id="score">Score: 0</p>
+        </div>
+        <div class="card-hilo">
+            <button class="btn btn-higher" id="btnhigher"></button>
+            <div class="card-display" id="card"></div>
+            <button class="btn btn-lower" id="btnlower"></button>
+        </div>
+        <div class="result">
+            <p id="result"></p>
+        </div>  
+        <button class="btn btn-startgame" id="startGame">Pause Game</button>           
+    </div>
+    <div class="screen pause-window" id="GPS">
+        <h1>GAME IS PAUSED</h1>    
+        <h2 id="pauseScore"></h2>    
+        <button class="btn btn-startgame" id="resumeGame">Resume Game</button>
+        <button class="btn btn-restartgame" id="restartGame">Restart Game</button>
+        <button class="btn btn-endgame" id="endGame">End Game</button>
+    </div>
+    <div class="screen game-over" id="GES">
+        <h1>GAME OVER</h1>    
+        <h2 id="endScore"></h2>    
+        <button class="btn btn-restartgame" id="overrestartGame">Restart Game</button>
+        <button class="btn btn-endgame" id="overendGame">End Game</button>
+    </div>
+    
+</body>
+<div class="message" id="GRuleS">
+    <div class="ss">
+        <p>The objective of the game is to correctly predict whether the next card drawn will be higher or lower than the current card.</p>
+        <button class="btn btn-exitRules" id="ruleExitBTN">Exit</button>
+    </div>
+</div>
+<script src="./script.js"></script>
+</html>
